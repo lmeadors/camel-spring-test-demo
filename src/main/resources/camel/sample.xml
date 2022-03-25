@@ -1,0 +1,6 @@
+<routes id="demoContext" xmlns="http://camel.apache.org/schema/spring">
+    <route id="demoRoute" autoStartup="true">
+        <from uri="{{demo.from}}"/>
+        <to uri="{{demo.to}}"/>
+    </route>
+</routes>
