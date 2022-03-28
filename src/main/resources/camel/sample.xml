@@ -1,6 +1,8 @@
 <routes id="demoContext" xmlns="http://camel.apache.org/schema/spring">
     <route id="demoRoute" autoStartup="true">
         <from uri="{{demo.from}}"/>
+        <log message="START OF ROUTE" loggingLevel="INFO"/>
         <to uri="{{demo.to}}"/>
+        <log message="END OF ROUTE" loggingLevel="INFO"/>
     </route>
 </routes>
